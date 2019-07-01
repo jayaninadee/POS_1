@@ -5,10 +5,13 @@
  */
 package servise;
 
+import java.rmi.Remote;
+import observer.Subject;
+
 /**
  *
  * @author x_cod3r
  */
-public interface Service {
-    
+public interface Service extends Remote,Subject{
+    public String chek(String message) throws Exception;
 }
